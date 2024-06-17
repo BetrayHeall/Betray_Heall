@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuestionario de Autoevaluación</title>
+<style>
+  body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center; /* Para centrar el contenido */
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .pregunta {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    text-align: center; /* Alineación del texto de la pregunta */
+    max-width: 1000px; /* Ancho máximo para limitar el tamaño en pantallas grandes */
+    margin: 0 auto; /* Centrar las preguntas horizontalmente */
+  }
+  .pregunta p {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .opciones {
+    display: flex;
+    justify-content: center;
+  }
+  .opcion {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px; /* Espacio entre opciones */
+    font-size: 16px;
+    background-color: #9b59b6; /* Color morado */
+    color: white;
+    border: none;
+  }
+  .opcion:hover {
+    background-color: #8e44ad;
+  }
+  .opcion.seleccionada {
+    background-color: #3498db; /* Color azul al seleccionar */
+  }
+  button.finalizar, .boton-regresar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  button.finalizar:hover, .boton-regresar:hover {
+    background-color: #27ae60; /* Color verde oscuro al hover */
+  }
+  .boton-regresar {
+    text-decoration: none;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+
+<h1>Cuestionario de Autoevaluación🤔</h1>
+
+<form id="cuestionario">
+  <div class="pregunta">
+    <p>1. ¿Soy consciente de mis motivaciones y necesidades emocionales en mis relaciones?</p>
+    <div class="opciones">
+      <div class="opcion" onclick="seleccionarRespuesta(this)">Sí</div>
+      <div class="opcion" onclick="seleccionarRespuesta(this)">No</div>
+    </div>
+  </div>
+
+  <div class="pregunta">
+    <p>2. ¿He sido honesto/a con mi pareja sobre mis sentimientos y preocupaciones?</p>
+    <div class="opciones">
+      <div class="opcion" onclick="seleccionarRespuesta(this)">Sí</div>
+      <div class="opcion" onclick="seleccionarRespuesta(this)">No</div>
+    </div>
+  </div>
+
+  <div class="pregunta">
+    <p>3. ¿He establecido y respetado límites claros en mis interacciones con otras personas?</p>
+    <div class="opciones">
+      <div class="opcion" onclick="seleccionarRespuesta(this)">Sí</div>
+      <div class="opcion" onclick="seleccionarRespuesta(this)">No</div>
+    </div>
+  </div>
+
+  <div class="pregunta">
+    <p>4. ¿He mantenido secretos o he tenido interacciones físicas/emocionales con alguien fuera de mi relación?</p>
+    <div class="opciones">
+      <div class="opcion" onclick="seleccionarRespuesta(this)">Sí</div>
+      <div class="opcion" onclick="seleccionarRespuesta(this)">No</div>
+    </div>
+  </div>
+
+  <div class="pregunta">
+    <p>5. ¿Estoy comprometido/a con los acuerdos y expectativas que hemos establecido en nuestra relación?</p>
+    <div class="opciones">
+      <div class="opcion" onclick="seleccionarRespuesta(this)">Sí</div>
+      <div class="opcion" onclick="seleccionarRespuesta(this)">No</div>
+    </div>
+  </div>
+
+  <div class="pregunta">
+    <p>6. ¿He sido transparente con mi pareja acerca de mis amistades y relaciones con otras personas?</p>
+    <div class="opciones">
+      <div class="opcion" onclick="seleccionarRespuesta(this)">Sí</div>
+      <div class="opcion" onclick="seleccionarRespuesta(this)">No</div>
+    </div>
+  </div>
+
+  <div class="pregunta">
+    <p>7. ¿He considerado cómo mis acciones podrían afectar negativamente a mi pareja y nuestra relación?</p>
+    <div class="opciones">
+      <div class="opcion" onclick="seleccionarRespuesta(this)">Sí</div>
+      <div class="opcion" onclick="seleccionarRespuesta(this)">No</div>
+    </div>
+  </div>
+
+  <div class="pregunta">
+    <p>8. ¿He buscado entender las razones detrás de mis impulsos o comportamientos que podrían comprometer la fidelidad?</p>
+    <div class="opciones">
+      <div class="opcion" onclick="seleccionarRespuesta(this)">Sí</div>
+      <div class="opcion" onclick="seleccionarRespuesta(this)">No</div>
+    </div>
+  </div>
+
+  <div class="pregunta">
+    <p>9. ¿He comunicado abiertamente a mi pareja cualquier tentación o conflicto emocional que haya experimentado? </p>
+    <div class="opciones">
+      <div class="opcion" onclick="seleccionarRespuesta(this)">Sí</div>
+      <div class="opcion" onclick="seleccionarRespuesta(this)">No</div>
+    </div>
+  </div>
+
+  <div class="pregunta">
+    <p>10. ¿Estoy comprometido/a con la confianza mutua y los valores que consideramos importantes en nuestra relación? </p>
+    <div class="opciones">
+      <div class="opcion" onclick="seleccionarRespuesta(this)">Sí</div>
+      <div class="opcion" onclick="seleccionarRespuesta(this)">No</div>
+    </div>
+  </div>
+
+  <!-- Agrega aquí más preguntas si las necesitas -->
+
+  <button type="button" class="finalizar" onclick="calcularResultado()">Finalizar</button>
+  <a href="ejemplo3.html" class="boton-regresar">Regresar</a>
+
+</form>
+
+<script>
+    function seleccionarRespuesta(elemento) {
+        var opciones = elemento.parentNode.getElementsByClassName('opcion');
+      
+        // Deseleccionar todas las opciones
+        for (var i = 0; i < opciones.length; i++) {
+            opciones[i].classList.remove('seleccionada');
+        }
+      
+        // Seleccionar la respuesta actual
+        elemento.classList.add('seleccionada');
+    }
+
+    function calcularResultado() {
+        var respuestas = document.forms["cuestionario"].getElementsByClassName("opcion");
+
+        var contadorSi = 0;
+
+        for (var i = 0; i < respuestas.length; i++) {
+            if (respuestas[i].classList.contains("seleccionada")) {
+                contadorSi++;
+            }
+        }
+
+        if (contadorSi < 5) {
+            alert("Debes seleccionar al menos 5 respuestas antes de finalizar.");
+            return;
+        }
+
+        // Redireccionar a la página de mensaje final con el resultado
+        var mensaje = "¡Wow, felicidades! Parece que estás construyendo una relación increíblemente sólida y honesta. Esto indica que estás muy conectado/a con tus emociones, has sido transparente con tu pareja y han establecido límites saludables juntos. Pero recuerda, las relaciones son como plantas, necesitan cuidado constante y buena comunicación para florecer. Aunque has respondido 'sí' a muchas preguntas, siempre hay espacio para crecer juntos. Sigue siendo sincero/a, escucha a tu pareja y estén listos/as para superar cualquier obstáculo juntos. ¡Sigamos construyendo un vínculo feliz y saludable!";
+        window.location.href = "Respautoevaluacion.html?mensaje=" + encodeURIComponent(mensaje);
+    }
+</script>
+
+</body>
+</html>
+
+

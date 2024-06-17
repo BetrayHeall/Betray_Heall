@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mensaje Final</title>
+<style>
+  body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center; /* Para centrar el contenido */
+  }
+  .mensaje {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  }
+  .mensaje h1 {
+    margin-bottom: 20px;
+  }
+  .mensaje p {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .mensaje img {
+    max-width: 100%; /* Ajustar la imagen al ancho del contenedor */
+    margin-top: 20px; /* Espacio entre el texto y la imagen */
+    border-radius: 10px; /* Borde redondeado */
+  }
+  .boton-regresar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .boton-regresar:hover {
+    background-color: #45a049; /* Color verde oscuro al hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="mensaje">
+  <h1>¡!</h1>
+  <p id="mensaje">
+    <!-- Aquí se insertará dinámicamente el mensaje desde el URL -->
+    Mensaje por defecto.
+  </p>
+  <img src="intensamente.jpg" alt="Imagen relacionada" />
+  <a href="Autoevaluacion.html" class="boton-regresar">Regresar al Cuestionario</a>
+</div>
+
+<script>
+// Obtener el mensaje desde el parámetro en el URL
+var urlParams = new URLSearchParams(window.location.search);
+var mensaje = urlParams.get('mensaje');
+document.getElementById("mensaje").innerText = mensaje;
+</script>
+
+</body>
+</html>

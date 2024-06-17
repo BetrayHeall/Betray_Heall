@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros y Enlaces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .libro {
+            width: 200px;
+            height: 300px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .libro img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .libro .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .enlaces {
+            margin-top: 30px;
+            text-align: center;
+            color: white
+        }
+        .enlaces a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="libro">
+            <img src="estres.jpg" alt="Libro 1">
+            <div class="titulo">Estres y ansiedad </div>
+        </div>
+        <div class="libro">
+            <img src="anti.jpg" alt="Libro 2">
+            <div class="titulo">Cuaderno anti estres</div>
+        </div>
+        <div class="libro">
+            <img src="man.jpg" alt="Libro 3">
+            <div class="titulo">Manejo del estres</div>
+        </div>
+        <div class="libro">
+            <img src="como.jpg" alt="Libro 4">
+            <div class="titulo">Cómo Manejar el Estrés Diario</div>
+        </div>
+
+    </div>
+    
+    <div class="enlaces">
+        <h2>Enlaces Directos a Google</h2>
+        <a href="https://www.amazon.com.mx/Resiliente-desarrollar-inquebrantable-n%C3%BAcleo-felicidad/dp/8484458091/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=27618DN9RT8AV&dib=eyJ2IjoiMSJ9.lrzVm9wurpeZSrM33kcsk2x2UJWR7EsxqgIJssJ60j8PQZxLYkYarMl6wDMkdpYUnZC7Zy5m8f8h02Pbmc8qziAjw4EW6VFPDI5pqw88QcOSomXGrPNAm5et2lQqyABi7hLzey-cH6ND0CkXqEhW9LMXY1sjBYdqUDPAsoFrrYHHl4XUV02G-JH4YxHF2EqjANnFczrcJGCAN5oVBY7CcIgrUlYfM1vKQOHqRXFXixu3Jt9pKIu_503mp8Uu-MVMwx4rJVq8gE7daPYbTThEDczMn_rFfDGOKz0GT-DFc7A.lBQGNVV6MDxajdOzFrFc8SG3mv4_I0wf2MNVlXbcno4&dib_tag=se&keywords=resiliencia&qid=1718488891&sprefix=resilenci%2Caps%2C206&sr=8-1&ufe=app_do%3Aamzn1.fos.242f5c11-6cfd-40d6-91f6-be3d1974080c" target="_blank">Enlace libro1</a>
+        <a href="https://www.amazon.com.mx/Cuaderno-Antiestr%C3%A9s-Recursos-Ejercicios-Pr%C3%A1cticos/dp/B0CVRR7P3L/ref=sr_1_3?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IAZWIIQJGIV6&dib=eyJ2IjoiMSJ9.EmEKTyiD20Cb339M3KGsoVSGrTVSukdY98LxSVKx9YMa4Y8pTABT7Cv7VMjo5b4yyA10sqedXRzD-SKc6GfHf-meOMqL8Ous1wS3K4RTW2Tf6nVc9clxENxrjn_meei2GIsKQ000yW3g6QuLYbIJzec6pkNDgXcZOkM61UFlePo6ZrUTZKMIybfOs2E8ro0dz-K-UmgSwlXgnJ9G70rgddlbaKrwcu1d8nJQm5u9skIGzArzA-EiMNjcUrjnQdcXIOtgGvnZ5bHTb4aQuU1grFx6YSQwfbdT6HZ17TbIUgQ.SGdgt0jCaEbgpoqNEOz6dygKI8GXtElyYKv8kdPlDrg&dib_tag=se&keywords=manejo+del+estres&qid=1718489258&sprefix=manejo+de+estres%2Caps%2C208&sr=8-3&ufe=app_do%3Aamzn1.fos.242f5c11-6cfd-40d6-91f6-be3d1974080c" target="_blank">Enlace libro2</a>
+        <a href="https://www.amazon.com.mx/Manejo-estr%C3%A9s-Conecta-emociones-controlar-ebook/dp/B079J6G4SL/ref=sr_1_4?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IAZWIIQJGIV6&dib=eyJ2IjoiMSJ9.EmEKTyiD20Cb339M3KGsoVSGrTVSukdY98LxSVKx9YMa4Y8pTABT7Cv7VMjo5b4yyA10sqedXRzD-SKc6GfHf-meOMqL8Ous1wS3K4RTW2Tf6nVc9clxENxrjn_meei2GIsKQ000yW3g6QuLYbIJzec6pkNDgXcZOkM61UFlePo6ZrUTZKMIybfOs2E8ro0dz-K-UmgSwlXgnJ9G70rgddlbaKrwcu1d8nJQm5u9skIGzArzA-EiMNjcUrjnQdcXIOtgGvnZ5bHTb4aQuU1grFx6YSQwfbdT6HZ17TbIUgQ.SGdgt0jCaEbgpoqNEOz6dygKI8GXtElyYKv8kdPlDrg&dib_tag=se&keywords=manejo+del+estres&qid=1718489258&sprefix=manejo+de+estres%2Caps%2C208&sr=8-4" target="_blank">Enlace libro3</a>
+        <a href="https://www.amazon.com.mx/C%C3%B3mo-Manejar-Estr%C3%A9s-Diario-Estrategias/dp/B0D1G25BMT/ref=sr_1_4?crid=2SZQ23T8B4LLF&dib=eyJ2IjoiMSJ9.ZV9In7Bdn0nr-tjOh6n2TAyftyHjoHyIH6F_Z0Vv9vuuubjXTyjDwXrpfoc-XvnaIi9vybJza9AxYT05TC4tNBx3LPacpwYF-tZbXn-mxSu2p2R531aH8h4XHb40Lx3ja_RNvs5_LFNSr9-q-VwIaOc6pkNDgXcZOkM61UFlePo6ZrUTZKMIybfOs2E8ro0ddG1beusMcNRj6cmivGTz8uj_dgKtdL1mm4Hj7toEUpEGzArzA-EiMNjcUrjnQdcXIOtgGvnZ5bHTb4aQuU1grFx6YSQwfbdT6HZ17TbIUgQ.bhPM30nnCErwzHSN8AHdnU1nu1EtRVY7N2B-kpi9jik&dib_tag=se&keywords=manejo+del+estres&qid=1718490593&sprefix=%2Caps%2C372&sr=8-4&ufe=app_do%3Aamzn1.fos.242f5c11-6cfd-40d6-91f6-be3d1974080c" target="_blank">Enlace libro4</a>
+    </div>
+</body>
+</html>

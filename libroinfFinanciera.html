@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros y Enlaces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .libro {
+            width: 200px;
+            height: 300px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .libro img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .libro .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .enlaces {
+            margin-top: 30px;
+            text-align: center;
+            color: white
+        }
+        .enlaces a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="libro">
+            <img src="inf.jpg" alt="Libro 1">
+            <div class="titulo">Infidelidad y dolor</div>
+        </div>
+        <div class="libro">
+            <img src="fin.jpg" alt="Libro 2">
+            <div class="titulo">Supera la Infidelidad financiera</div>
+        </div>
+        <div class="libro">
+            <img src="dol.jpg" alt="Libro 3">
+            <div class="titulo">Dolor de la Infidelidad</div>
+        </div>
+        <div class="libro">
+            <img src="mientras.jpg" alt="Libro 4">
+            <div class="titulo">Mientras no sueltes...</div>
+        </div>
+    </div>
+    <div class="enlaces">
+        <h2>Enlaces Directos a Google</h2>
+        <a href="https://leer.amazon.es/sample/B0CC3YDQ5Q?f=1&l=es_ES&r=f3e32c2&rid=567JH8E6KR8KD0QKQN7Z&sid=260-6060370-9148042&ref_=litb_m" target="_blank">Enlace Libro 1</a>
+        <a href="https://www.amazon.es/Supera-Infidelidad-renovar-coraz%C3%B3n-infidelidad/dp/B08KH3RFYX/ref=mp_s_a_1_130?dib=eyJ2IjoiMSJ9.R-ToOkhovmd70WcLqW1fwuUA4MQ58SU47QNkoCTsu6inOikyjcW7yhlJRt4AMTck.sWHNpNafu2BJ1FtwxaD4KUdQph-DfpVSuTqOSX85IWU&dib_tag=se&keywords=Infidelidad&qid=1718475471&s=books&sr=1-130" target="_blank">Enlace Libro 2</a>
+        <a href="https://leer.amazon.es/sample/B09LVVBTGB?f=1&l=es_ES&r=ac63b16e&rid=2DM3W4VDF8D0306452C7&sid=260-6060370-9148042&ref_=litb_m" target="_blank">Enlace Libro 3</a>
+        <a href="https://leer.amazon.es/sample/B0BX86S9KV?f=1&l=es_ES&r=56df26fd&rid=YDK447A2AMHV53JPQFYE&sid=260-6060370-9148042&ref_=litb_m" target="_blank">Enlace Libro 4</a>
+    </div>
+</body>
+</html>  

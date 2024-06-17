@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros y Enlaces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .libro {
+            width: 200px;
+            height: 300px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .libro img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .libro .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .enlaces {
+            margin-top: 30px;
+            text-align: center;
+            color: white
+        }
+        .enlaces a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="libro">
+            <img src="el amor.jpg" alt="Libro 1">
+            <div class="titulo">1,095 dias</div>
+        </div>
+        <div class="libro">
+            <img src="verbal.jpg" alt="Libro 2">
+            <div class="titulo">Descubre la mentriaa</div>
+        </div>
+        <div class="libro">
+            <img src="madam.jpg" alt="Libro 3">
+            <div class="titulo">Madam mentiras</div>
+        </div>
+        <div class="libro">
+            <img src="Dominatusentimientos.png" alt="Libro 4">
+            <div class="titulo">Domina tus sentimientos</div>
+        </div>
+
+    </div>
+    
+    <div class="enlaces">
+        <h2>Enlaces Directos a Google</h2>
+        <a href="https://www.perlego.com/es/book/2932182/infidelidad-emocional-el-engao-amoroso-que-no-implica-sexo-pdf" target="_blank">Enlace libro1</a>
+        <a href="https://www.amazon.com.mx/Descubre-mentira-Houston-Michael-Carnicero/dp/847808908X/ref=sr_1_4?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2ONU13HTZRANU&dib=eyJ2IjoiMSJ9.VjlnOOOkOLQc9r20ctQsBkZ1FiEqfThp4Opq15QVzsmG7krKAvsnvWG9uP0GCRi5dsXKgHjHPYhEIef1fnMxYZNsV_ZEo0PdCvSM3oG5HomOEtu9Ue-AU-K0fA486q32rumSl9qmbR3tX-goZ55VCdZQM3Gx0qfeOFODSTO_YpcRQ9G9-vtch_iEq3ZUmzKYp77eVOajvv7N7_LzYKClv_01VTr_aI6iPEq_yeLf0q--XetE-d57NrDjChg2kbR4eM8cZ7Ftk4VbaKwfk5y8x0h0xmRcUOGbNy6yD9kfDiU.hgTHGzAO4pAFLxy_sP_UG7jrySr_1JZAPoD-yXeMKUs&dib_tag=se&keywords=libros+de+enga%C3%B1o+verbal&qid=1718485966&sprefix=libros+de+enga%C3%B1o+verbal%2Caps%2C114&sr=8-4" target="_blank">Enlace libro2</a>
+        <a href="https://www.culturagenial.com/es/madame-bovary-de-flaubert/" target="_blank">Enlace libro3</a>
+        <a href="https://www.amazon.com/-/es/Thibaut-Meurisse/dp/B08B7DJFC2/ref=pd_bxgy_thbs_d_sccl_2/147-5582274-2056869?pd_rd_w=p770x&content-id=amzn1.sym.c51e3ad7-b551-4b1a-b43c-3cf69addb649&pf_rd_p=c51e3ad7-b551-4b1a-b43c-3cf69addb649&pf_rd_r=PJAN7KRBVEFKSZREPJ59&pd_rd_wg=udBvj&pd_rd_r=40c30e91-9ec5-4cd5-9997-2fa21453eabd&pd_rd_i=B08B7DJFC2&psc=1" target="_blank">Enlace libro4</a>
+    </div>
+</body>
+</html>

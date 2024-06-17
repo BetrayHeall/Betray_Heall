@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros y Enlaces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .libro {
+            width: 200px;
+            height: 300px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .libro img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .libro .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .enlaces {
+            margin-top: 30px;
+            text-align: center;
+            color: white
+        }
+        .enlaces a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="libro">
+            <img src="razon.jpg" alt="Libro 1">
+            <div class="titulo">Tus zonas erróneas</div>
+        </div>
+        <div class="libro">
+            <img src="libertad.jpg" alt="Libro 2">
+            <div class="titulo">Tu libertad.</div>
+        </div>
+        <div class="libro">
+            <img src="cono.jpg"Libro 3">
+            <div class="titulo">Encantado de conocerme</div>
+        </div>
+        <div class="libro">
+            <img src="SS.jpg" alt="Libro 4">
+            <div class="titulo">El hombre busca sentido</div>
+        </div>
+
+    </div>
+    
+    <div class="enlaces">
+        <h2>Enlaces Directos a Google</h2>
+        <a href="https://www.amazon.es/zonas-err%C3%B3neas-CLAVE-Wayne-Dyer/dp/8499085520/ref=as_li_ss_tl?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1XQ4JKY0SINFC&keywords=zonas+erroneas&qid=1581075798&s=books&sprefix=zonas+er,stripbooks,174&sr=1-1&linkCode=sl1&tag=wwwivanojangu-21&linkId=bac67a25c93a45427ab8cb6c07299ee6&language=es_ES" target="_blank">Enlace libro1</a>
+        <a href="https://www.amazon.es/Libertad-valent%C3%ADa-ser-mismo-CLAVE/dp/8499089844/ref=as_li_ss_tl?ie=UTF8&qid=1496934641&sr=8-1&keywords=osho+libertad&linkCode=sl1&tag=wwwivanojangu-21&linkId=645c84f9a803cf9de65d30e4c02b5c2d" target="_blank">Enlace libro2</a>
+        <a href="https://www.amazon.es/Encantado-Conocerme-CLAVE-Borja-Vilaseca/dp/8490324298/ref=as_li_ss_tl?s=books&ie=UTF8&qid=1496935424&sr=1-1&keywords=encantado+de+conocerme&linkCode=sl1&tag=wwwivanojangu-21&linkId=dfa454bddce365116855015960f04682" target="_blank">Enlace libro3</a>
+        <a href="https://www.amazon.es/Hombre-Busca-Sentido-Nueva-Edici%C3%B3n/dp/8425432022/ref=as_li_ss_tl?ie=UTF8&qid=1474561159&sr=8-1&keywords=hombre+busca+sentido&linkCode=sl1&tag=wwwivanojangu-21&linkId=64cf69a32a7cf1791af8efb33d16aac2&language=es_ES" target="_blank">Enlace libro4</a>
+    </div>
+</body>
+</html>

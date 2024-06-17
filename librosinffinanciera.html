@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros y Enlaces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .libro {
+            width: 200px;
+            height: 300px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .libro img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .libro .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .enlaces {
+            margin-top: 30px;
+            text-align: center;
+            color: white
+        }
+        .enlaces a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="libro">
+            <img src="por1.jpg" alt="Libro 1">
+            <div class="titulo">En Pedazos</div>
+        </div>
+        <div class="libro">
+            <img src="por2.jpg" alt="Libro 2">
+            <div class="titulo">La Locura De La Infidelidad</div>
+        </div>
+        <div class="libro">
+            <img src="por3.jpg" alt="Libro 3">
+            <div class="titulo">Recuperate De La Infidelidad</div>
+        </div>
+        <div class="libro">
+            <img src="por4.jpg" alt="Libro 4">
+            <div class="titulo">Despues De La Infidelidad</div>
+        </div>
+    </div>
+    <div class="enlaces">
+        <h2>Enlaces Directos a Google</h2>
+        <a href="https://www.amazon.com.mx/En-Pedazos-Historias-esperanza-infidelidad-ebook/dp/B00WCADXTG" target="_blank">Enlace Libro 1</a>
+        <a href="https://www.amazon.com/-/es/Ediana-Patricia-Mar%C3%ADn-ebook/dp/B00L6NFPS2" target="_blank">Enlace a Libro 2</a>
+        <a href="https://www.amazon.com.be/RECUP%C3%89RATE-INFIDELIDAD-Reponerse-Desilusi%C3%B3n-Infidelidad/dp/1801722137" target="_blank">Enlace a Libro 3</a>
+        <a href="https://books.google.com.ni/books/about/Despu%C3%A9s_de_la_infidelidad.html?id=BgIRBwAAQBAJ&printsec=frontcover&source=kp_read_button&hl=es-419&newbks=1&newbks_redir=0&gboemv=1&redir_esc=y#v=onepage&q&f=false" target="_blank">Enlace a Libro 4</a>
+    </div>
+</body>
+</html>    

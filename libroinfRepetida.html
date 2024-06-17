@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros y Enlaces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .libro {
+            width: 200px;
+            height: 300px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .libro img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .libro .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .enlaces {
+            margin-top: 30px;
+            text-align: center;
+            color: white
+        }
+        .enlaces a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="libro">
+            <img src="por17.jpg" alt="Libro 1">
+            <div class="titulo">Infidelidad</div>
+        </div>
+        <div class="libro">
+            <img src="por18.jpg" alt="Libro 2">
+            <div class="titulo">Cara Oculta</div>
+        </div>
+        <div class="libro">
+            <img src="port1.jpg" alt="Libro 3">
+            <div class="titulo">Manual Para Detectar Infidelidades</div>
+        </div>
+        <div class="libro">
+            <img src="port2.jpg" alt="Libro 4">
+            <div class="titulo">Infidelidad</div>
+        </div>
+    </div>
+    <div class="enlaces">
+        <h2>Enlaces Directos a Google</h2>
+        <a href="https://www.amazon.es/Superar-infidelidad-aprender-recuperar-confianza-ebook/dp/B00CD444LM/ref=mp_s_a_1_38?dib=eyJ2IjoiMSJ9.5AEzNqgUvULDaOxwahX_H6X3aWxxFRfayWu7w1y1LKEwvo-FwY6qK8Eut7LTyszH1VhqvGANYH98bSCGlwpz4YNZXf3FnjQcamtDehlZliglCyg1zzXIzslIhPPXmV9EoEYtEVzaqlPyEvhQ0QHyIOKMeFAqaA_uq7nJ6mrFv63vv-fR3gmlTkLn0k1ak0s1nIVcrytTh7f5bRulxMDK1Q.8jBk8Wy_WfdA8abIoA7nqitp3vQ4TQDcV23n0gKe5-w&dib_tag=se&keywords=Infidelidad&qid=1718474171&s=books&sr=1-38" target="_blank">Enlace Libro 1</a>
+        <a href="https://www.amazon.es/cara-oculta-infidelidad-tiene-precio/dp/B0B68Y9RR9/ref=mp_s_a_1_43?dib=eyJ2IjoiMSJ9.5AEzNqgUvULDaOxwahX_H6X3aWxxFRfayWu7w1y1LKEwvo-FwY6qK8Eut7LTyszH1VhqvGANYH98bSCGlwpz4YNZXf3FnjQcamtDehlZliglCyg1zzXIzslIhPPXmV9EoEYtEVzaqlPyEvhQ0QHyIOKMeFAqaA_uq7nJ6mrFv63vv-fR3gmlTkLn0k1ak0s1nIVcrytTh7f5bRulxMDK1Q.8jBk8Wy_WfdA8abIoA7nqitp3vQ4TQDcV23n0gKe5-w&dib_tag=se&keywords=Infidelidad&qid=1718474171&s=books&sr=1-43" target="_blank">Enlace Libro 2</a>
+        <a href="https://www.amazon.es/Manual-detectar-infidelidades-Sociedad-actual/dp/8411313646/ref=mp_s_a_1_46?dib=eyJ2IjoiMSJ9.5AEzNqgUvULDaOxwahX_H6X3aWxxFRfayWu7w1y1LKEwvo-FwY6qK8Eut7LTyszH1VhqvGANYH98bSCGlwpz4YNZXf3FnjQcamtDehlZliglCyg1zzXIzslIhPPXmV9EoEYtEVzaqlPyEvhQ0QHyIOKMeFAqaA_uq7nJ6mrFv63vv-fR3gmlTkLn0k1ak0s1nIVcrytTh7f5bRulxMDK1Q.8jBk8Wy_WfdA8abIoA7nqitp3vQ4TQDcV23n0gKe5-w&dib_tag=se&keywords=Infidelidad&qid=1718474171&s=books&sr=1-46" target="_blank">Enlace Libro 3</a>
+        <a href="https://www.amazon.es/INFIDELIDAD-Causas-Consecuencias-Caminos-Sanaci%C3%B3n/dp/B0D6GKYB1W/ref=mp_s_a_1_33?dib=eyJ2IjoiMSJ9.c1mpfXzn50unOsa20tSphlPONpE6uyLv2yB5f5wkEwIjrwR0U5f4kpdsQGx7KyzmxSo8GNr_VRl-pqKdXkEW-PrJvph0V-2-jHaHVv-whBRYDxQnLGO7l5Kqj3Ob9Xyyamr078ZZOwO3Pv6gWXnnXrmwMNtGZRFAlIIkqwA797Aw819kceInNVFyjg6WzJY7Gyh0HuX9CSBcZDT6FRTkgA.8_vh_ymayKcTJQVnBs1gQh4y1R1rvHgJMZVMufoNXK0&dib_tag=se&keywords=Infidelidad&qid=1718473794&s=books&sr=1-33" target="_blank">Enlace Libro 4</a>
+    </div>
+</body>
+</html>  

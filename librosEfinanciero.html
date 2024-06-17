@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros y Enlaces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .libro {
+            width: 200px;
+            height: 300px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .libro img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .libro .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .enlaces {
+            margin-top: 30px;
+            text-align: center;
+            color: white
+        }
+        .enlaces a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="libro">
+            <img src="guia.jpg" alt="Libro 1">
+            <div class="titulo">Afronta la Infidelidad Financiera</div>
+        </div>
+        <div class="libro">
+            <img src="yo.jpg" alt="Libro 2">
+            <div class="titulo">Yo despues de ti.</div>
+        </div>
+        <div class="libro">
+            <img src="amor.jpg" alt="Libro 3">
+            <div class="titulo">Amor propio</div>
+        </div>
+        <div class="libro">
+            <img src="solo.jpg" alt="Libro 4">
+            <div class="titulo">El placer de estar a solas</div>
+        </div>
+
+    </div>
+    
+    <div class="enlaces">
+        <h2>Enlaces Directos a Google</h2>
+        <a href="https://www.amazon.es/Gu%C3%ADa-pr%C3%A1ctica-afrontar-infidelidad-pareja-ebook/dp/B00XUIIQT6?&linkCode=sl1&tag=bookk-21&linkId=0ca9ed64a07665a922caeb097f1b7f72&language=es_ES&ref_=as_li_ss_tl" target="_blank">Enlace libro1</a>
+        <a href="https://www.amazon.es/Yo-despu%C3%A9s-C%C3%B3mo-mejorar-ruptura/dp/B08CJQLTY4?&linkCode=sl1&tag=bookk-21&linkId=bc2e5100785b549fb681e6dbac2a69db&language=es_ES&ref_=as_li_ss_tl" target="_blank">Enlace libro2</a>
+        <a href="hhttps://www.amazon.es/dp/9801837799/ref=sspa_dk_detail_1?psc=1&pd_rd_i=9801837799&pd_rd_w=Mvf6w&content-id=amzn1.sym.d9fd07ad-95b5-4079-8602-de55e6918bc7&pf_rd_p=d9fd07ad-95b5-4079-8602-de55e6918bc7&pf_rd_r=WBA0M7HZ5D8GJTBJ75Y1&pd_rd_wg=siCDu&pd_rd_r=e0a6784b-9009-4057-b0fc-98e542afaeae&s=books&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw" target="_blank">Enlace libro3</a>
+        <a href="https://www.amazon.es/solas-Descubre-contigo-Autoayuda-superaci%C3%B3n/dp/8408216074?&linkCode=sl1&tag=bookk-21&linkId=0fe1eb4bb8f0d4ba5e710ac5f0a9e32a&language=es_ES&ref_=as_li_ss_tl" target="_blank">Enlace libro4</a>
+    </div>
+</body>
+</html>

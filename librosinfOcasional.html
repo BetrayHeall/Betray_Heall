@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros y Enlaces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .libro {
+            width: 200px;
+            height: 300px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .libro img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .libro .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .enlaces {
+            margin-top: 30px;
+            text-align: center;
+            color: white
+        }
+        .enlaces a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="libro">
+            <img src="por5.jpg" alt="Libro 1">
+            <div class="titulo">Nadie Se Muere De Amor</div>
+        </div>
+        <div class="libro">
+            <img src="por6.jpg" alt="Libro 2">
+            <div class="titulo">Ni Felices Ni Para Siempre</div>
+        </div>
+        <div class="libro">
+            <img src="por7.jpg" alt="Libro 3">
+            <div class="titulo">Infidelidad</div>
+        </div>
+        <div class="libro">
+            <img src="por8.jpg" alt="Libro 4">
+            <div class="titulo">Alta Infidelidad</div>
+        </div>
+    </div>
+    <div class="enlaces">
+        <h2>Enlaces Directos a Google</h2>
+        <a href="https://books.google.com.ni/books/about/Nadie_se_muere_de_amor.html?id=GkVKEAAAQBAJ&printsec=frontcover&source=kp_read_button&hl=es-419&newbks=1&newbks_redir=0&gboemv=1&redir_esc=y#v=onepage&q&f=false" target="_blank">Enlace Libro 1</a>
+        <a href="https://books.google.com.ni/books/about/Ni_felices_ni_para_siempre.html?id=7n3_CgAAQBAJ&printsec=frontcover&source=kp_read_button&hl=es-419&newbks=1&newbks_redir=0&gboemv=1&redir_esc=y#v=onepage&q&f=false" target="_blank">Enlace Libro 2</a>
+        <a href="https://books.google.com.ni/books/about/Infidelidad.html?id=vEfkDAAAQBAJ&printsec=frontcover&source=kp_read_button&hl=es-419&newbks=1&newbks_redir=0&gboemv=1&redir_esc=y#v=onepage&q&f=false" target="_blank">Enlace Libro 3</a>
+        <a href="https://books.google.com.ni/books/about/Alta_infidelidad.html?id=eFy0JsMji3gC&printsec=frontcover&source=kp_read_button&hl=es-419&newbks=1&newbks_redir=0&gboemv=1&redir_esc=y#v=onepage&q&f=false" target="_blank">Enlace Libro 4</a>
+    </div>
+</body>
+</html>    

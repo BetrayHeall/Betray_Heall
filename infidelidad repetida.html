@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones con Imágenes</title>
+    <link rel="stylesheet" href="styles5.css">
+    <script>
+      function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+        var results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
+      function navigateToFinalPage(page) {
+        var theme = getParameterByName('theme');
+        var subtheme = getParameterByName('subtheme');
+        var url = `${theme}_${subtheme}_${page}.html`;
+        window.location.href = url;
+      }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="option">
+            <a href="videosinfrepetida.html" class="button" onclick="navigateToFinalPage('videos')"><img src="Imagen1.jpg" alt="Botón 1"></a>
+            <p>Mirar videos y podcasts</p>
+        </div>
+        <div class="option">
+            <a href="consejosRepetida.html" class="button" onclick="navigateToFinalPage('consejos')"><img src="Imagen2.jpg" alt="Botón 2"></a>
+            <p>Recibir consejos prácticos</p>
+        </div>
+        <div class="option">
+            <a href="diarioEmociones.html" class="button" onclick="navigateToFinalPage('diario')"><img src="Imagen3.jpg" alt="Botón 3"></a>
+            <p>Realizar mi diario de emociones</p>
+        </div>
+        <div class="option">
+            <a href="libroinfRepetida.html" class="button" onclick="navigateToFinalPage('recursos')"><img src="Imagen4.jpg" alt="Botón 4"></a>
+            <p>Obtener enlaces a sitios web, libros y recursos externos</p>
+        </div>
+        <div class="option">
+            <a href="forodeayuda.html" class="button" onclick="navigateToFinalPage('foro')"><img src="Imagen5.jpg" alt="Botón 5"></a>
+            <p>Ingresar a un foro para compartir experiencias</p>
+        </div>
+        <div class="option">
+            <a href="Autoevaluacion.html" class="button" onclick="navigateToFinalPage('cuestionario')"><img src="Imagen6.jpg" alt="Botón 6"></a>
+            <p>Cuestionario opcional de autoevaluación</p>
+        </div>
+    </div>
+</body>
+</html>
